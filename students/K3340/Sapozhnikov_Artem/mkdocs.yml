@@ -11,5 +11,9 @@ nav:
       - "Практика 1.3": practice_1_3.md
 
   - Проект:
+      - "Структура проекта": project_structure.md
+      - "База данных и модели": database.md
+      - "Авторизация и JWT": auth.md
       - "API": api.md
-      - "База данных": database.md
+      - "Отчеты": reports.md
+      - "Демонстрация работы": demonstration.md
