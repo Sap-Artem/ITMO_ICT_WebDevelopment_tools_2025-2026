@@ -1,0 +1,11 @@
+fastapi[all]
+sqlmodel
+psycopg[binary]
+python-dotenv
+alembic
+PyJWT
+passlib[bcrypt]
+requests
+beautifulsoup4
+celery
+redis

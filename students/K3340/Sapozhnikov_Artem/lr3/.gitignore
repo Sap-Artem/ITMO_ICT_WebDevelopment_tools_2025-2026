@@ -1,0 +1,6 @@
+.venv/
+.venv312/
+__pycache__/
+*.pyc
+.env
+finance_final_db_dump.sql

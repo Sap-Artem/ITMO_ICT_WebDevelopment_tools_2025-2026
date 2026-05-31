@@ -1,0 +1,69 @@
+services:
+  db:
+    image: postgres:18
+    container_name: finance_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: finance_final_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql
+
+  redis:
+    image: redis:7
+    container_name: finance_redis
+    ports:
+      - "6379:6379"
+
+  parser_api:
+    build: .
+    container_name: finance_parser_api
+    command: uvicorn app.parser.parser_api:app --host 0.0.0.0 --port 8001
+    ports:
+      - "8001:8001"
+    environment:
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: finance_final_db
+    depends_on:
+      - db
+
+  app:
+    build: .
+    container_name: finance_app
+    ports:
+      - "8000:8000"
+    environment:
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: finance_final_db
+      REDIS_URL: redis://redis:6379/0
+      PARSER_API_URL: http://parser_api:8001
+    depends_on:
+      - db
+      - redis
+      - parser_api
+
+  worker:
+    build: .
+    container_name: finance_worker
+    command: celery -A app.celery_app.celery_app worker --loglevel=info
+    environment:
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: finance_final_db
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      - db
+      - redis
+
+volumes:
+  postgres_data:
