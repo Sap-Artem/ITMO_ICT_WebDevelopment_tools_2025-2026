@@ -1,19 +1,29 @@
-site_name: Personal Finance Service
+site_name: ITMO Web Development Labs
+
 theme:
   name: material
 
 nav:
   - Главная: index.md
 
-  - Практики:
-      - "Практика 1.1": practice_1_1.md
-      - "Практика 1.2": practice_1_2.md
-      - "Практика 1.3": practice_1_3.md
+  - Лабораторная работа №1:
+      - Введение: lr1/index.md
+      - Практика 1.1: lr1/practice_1_1.md
+      - Практика 1.2: lr1/practice_1_2.md
+      - Практика 1.3: lr1/practice_1_3.md
+      - Структура проекта: lr1/project_structure.md
+      - База данных: lr1/database.md
+      - Авторизация: lr1/auth.md
+      - API: lr1/api.md
+      - Отчёты: lr1/reports.md
+      - Демонстрация: lr1/demonstration.md
 
-  - Проект:
-      - "Структура проекта": project_structure.md
-      - "База данных и модели": database.md
-      - "Авторизация и JWT": auth.md
-      - "API": api.md
-      - "Отчеты": reports.md
-      - "Демонстрация работы": demonstration.md
+  - Лабораторная работа №2:
+      - 1 задание: lr2/task1.md
+      - 2 задание: lr2/task2.md
+
+  - Лабораторная работа №3:
+      - Обзор: lr3/index.md
+      - Docker и Docker Compose: lr3/docker.md
+      - HTTP-интеграция парсера: lr3/parser_api.md
+      - Celery и Redis: lr3/celery.md

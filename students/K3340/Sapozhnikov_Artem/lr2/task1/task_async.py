@@ -1,53 +1,50 @@
 import asyncio
 import time
+from multiprocessing import cpu_count
+
+TOTAL_NUMBER = 1_000_000_000
+NUM_TASKS = cpu_count()
 
 
-N = 10_000_000_000_000
-TASKS_COUNT = 10
+async def calculate_sum(start: int, end: int) -> int:
+    total = 0
 
+    for i in range(start, end + 1):
+        total += i
 
-def get_ranges(target, tasks_count):
-    """
-    Разбивает общий диапазон от 1 до target
-    на части для асинхронных задач.
-    """
-    chunk_size = target // tasks_count
-    ranges = []
-
-    for i in range(tasks_count):
-        start = i * chunk_size + 1
-        end = (i + 1) * chunk_size if i < tasks_count - 1 else target
-        ranges.append((start, end))
-
-    return ranges
-
-
-async def calculate_sum(start, end):
-    """
-    Асинхронная задача для вычисления суммы диапазона.
-    """
-    return (start + end) * (end - start + 1) // 2
+    return total
 
 
 async def main():
-    start_time = time.time()
+    start_time = time.perf_counter()
 
-    ranges = get_ranges(N, TASKS_COUNT)
+    chunk_size = TOTAL_NUMBER // NUM_TASKS
 
-    tasks = [
-        calculate_sum(start, end)
-        for start, end in ranges
-    ]
+    tasks = []
+
+    for i in range(NUM_TASKS):
+        start = i * chunk_size + 1
+
+        end = (
+            (i + 1) * chunk_size
+            if i < NUM_TASKS - 1
+            else TOTAL_NUMBER
+        )
+
+        tasks.append(
+            asyncio.create_task(
+                calculate_sum(start, end)
+            )
+        )
 
     results = await asyncio.gather(*tasks)
 
-    total_sum = sum(results)
-    check_sum = N * (N + 1) // 2
+    total = sum(results)
 
-    print("Async result:", total_sum)
-    print("Check result:", check_sum)
-    print("Correct:", total_sum == check_sum)
-    print("Execution time:", time.time() - start_time)
+    elapsed = time.perf_counter() - start_time
+
+    print(f"Result: {total}")
+    print(f"Time: {elapsed:.2f} sec")
 
 
 if __name__ == "__main__":
