@@ -9,21 +9,23 @@
       
       
       
+        <link rel="prev" href="../parser_api/">
+      
       
       
         
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>ITMO Web Development Labs</title>
+        <title>Celery и Redis - ITMO Web Development Labs</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -42,7 +44,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -59,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#celery-redis" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -71,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="ITMO Web Development Labs" class="md-header__button md-logo" aria-label="ITMO Web Development Labs" data-md-component="logo">
+    <a href="../.." title="ITMO Web Development Labs" class="md-header__button md-logo" aria-label="ITMO Web Development Labs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -91,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Celery и Redis
             
           </span>
         </div>
@@ -169,7 +176,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="ITMO Web Development Labs" class="md-nav__button md-logo" aria-label="ITMO Web Development Labs" data-md-component="logo">
+    <a href="../.." title="ITMO Web Development Labs" class="md-nav__button md-logo" aria-label="ITMO Web Development Labs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -187,7 +194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -261,7 +268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lr1/" class="md-nav__link">
+      <a href="../../lr1/" class="md-nav__link">
         
   
   
@@ -289,7 +296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lr1/practice_1_1/" class="md-nav__link">
+      <a href="../../lr1/practice_1_1/" class="md-nav__link">
         
   
   
@@ -317,7 +324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lr1/practice_1_2/" class="md-nav__link">
+      <a href="../../lr1/practice_1_2/" class="md-nav__link">
         
   
   
@@ -345,7 +352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lr1/practice_1_3/" class="md-nav__link">
+      <a href="../../lr1/practice_1_3/" class="md-nav__link">
         
   
   
@@ -373,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lr1/project_structure/" class="md-nav__link">
+      <a href="../../lr1/project_structure/" class="md-nav__link">
         
   
   
@@ -401,7 +408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lr1/database/" class="md-nav__link">
+      <a href="../../lr1/database/" class="md-nav__link">
         
   
   
@@ -429,7 +436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lr1/auth/" class="md-nav__link">
+      <a href="../../lr1/auth/" class="md-nav__link">
         
   
   
@@ -457,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lr1/api/" class="md-nav__link">
+      <a href="../../lr1/api/" class="md-nav__link">
         
   
   
@@ -485,7 +492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lr1/reports/" class="md-nav__link">
+      <a href="../../lr1/reports/" class="md-nav__link">
         
   
   
@@ -513,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lr1/demonstration/" class="md-nav__link">
+      <a href="../../lr1/demonstration/" class="md-nav__link">
         
   
   
@@ -595,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lr2/task1/" class="md-nav__link">
+      <a href="../../lr2/task1/" class="md-nav__link">
         
   
   
@@ -623,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lr2/task2/" class="md-nav__link">
+      <a href="../../lr2/task2/" class="md-nav__link">
         
   
   
@@ -655,18 +662,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -687,7 +696,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -705,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lr3/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -733,7 +742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lr3/docker/" class="md-nav__link">
+      <a href="../docker/" class="md-nav__link">
         
   
   
@@ -761,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lr3/parser_api/" class="md-nav__link">
+      <a href="../parser_api/" class="md-nav__link">
         
   
   
@@ -786,10 +795,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/lr3/celery/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Celery и Redis
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -805,6 +841,81 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#celery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Настройка Celery
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#celery-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Celery-задача
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Асинхронный endpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проверка статуса задачи
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swagger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проверка через Swagger
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -834,6 +945,71 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#celery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Настройка Celery
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#celery-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Celery-задача
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Асинхронный endpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проверка статуса задачи
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swagger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проверка через Swagger
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -846,8 +1022,87 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="celery-redis">Celery и Redis</h1>
+<p>В данной части реализован асинхронный вызов парсера.</p>
+<p>Основное приложение не ждёт завершения парсинга, а ставит задачу в очередь Redis. После этого Celery worker забирает задачу из очереди и выполняет её в фоне.</p>
+<hr />
+<h2 id="celery">Настройка Celery</h2>
+<p>Файл <code>celery_app.py</code> содержит конфигурацию Celery.</p>
+<pre><code class="language-python">REDIS_URL = os.getenv(&quot;REDIS_URL&quot;, &quot;redis://redis:6379/0&quot;)
+
+celery_app = Celery(
+    &quot;finance_parser&quot;,
+    broker=REDIS_URL,
+    backend=REDIS_URL,
+)
+
+celery_app.autodiscover_tasks([&quot;app.parser&quot;])
+</code></pre>
+<p>Redis используется одновременно как брокер задач и как backend для хранения результатов.</p>
+<hr />
+<h2 id="celery-">Celery-задача</h2>
+<p>Файл <code>tasks.py</code> содержит задачу для фонового запуска парсера.</p>
+<pre><code class="language-python">@celery_app.task(name=&quot;parse_books_task&quot;)
+def parse_books_task(urls: list[str] | None = None):
+    return parse_urls(urls)
+</code></pre>
+<p>Эта задача вызывает ту же функцию парсинга, что и синхронный сервис, но выполняется в отдельном контейнере <code>finance_worker</code>.</p>
+<hr />
+<h2 id="endpoint">Асинхронный endpoint</h2>
+<p>В основном приложении был добавлен endpoint <code>/parser/async</code>.</p>
+<pre><code class="language-python">@router.post(&quot;/async&quot;)
+def run_parser_async(urls: list[str] | None = None):
+    task = parse_books_task.delay(urls)
+
+    return {
+        &quot;status&quot;: &quot;started&quot;,
+        &quot;task_id&quot;: task.id,
+    }
+</code></pre>
+<p>После вызова endpoint сразу возвращает <code>task_id</code>, не ожидая завершения парсинга.</p>
+<hr />
+<h2 id="_1">Проверка статуса задачи</h2>
+<p>Для проверки результата используется endpoint <code>/parser/tasks/{task_id}</code>.</p>
+<pre><code class="language-python">@router.get(&quot;/tasks/{task_id}&quot;)
+def get_task_status(task_id: str):
+    task = AsyncResult(task_id, app=celery_app)
+
+    return {
+        &quot;task_id&quot;: task_id,
+        &quot;status&quot;: task.status,
+        &quot;result&quot;: task.result if task.ready() else None,
+    }
+</code></pre>
+<p>Если задача успешно выполнена, статус становится:</p>
+<pre><code class="language-text">SUCCESS
+</code></pre>
+<hr />
+<h2 id="swagger">Проверка через Swagger</h2>
+<p>Для запуска фоновой задачи используется:<code>POST /parser/async</code></p>
+<p><img alt="img_3.png" src="../img_3.png" />
+Получаем <code>task_id</code></p>
+<p><img alt="img_4.png" src="../img_4.png" />
+После получения <code>task_id</code> необходимо выполнить <code>GET /parser/tasks/{task_id}</code></p>
+<p><img alt="img_5.png" src="../img_5.png" /></p>
+<p>Убеждаемся, что статус SUCCESS</p>
+<p><img alt="img_6.png" src="../img_6.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -884,10 +1139,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": [], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

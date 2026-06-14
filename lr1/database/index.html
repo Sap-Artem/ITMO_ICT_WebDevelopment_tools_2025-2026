@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../database/">
+        <link rel="prev" href="../project_structure/">
       
       
-        <link rel="next" href="../api/">
+        <link rel="next" href="../auth/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Авторизация и JWT - Personal Finance Service</title>
+        <title>База данных - ITMO Web Development Labs</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -46,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#jwt" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Personal Finance Service" class="md-header__button md-logo" aria-label="Personal Finance Service" data-md-component="logo">
+    <a href="../.." title="ITMO Web Development Labs" class="md-header__button md-logo" aria-label="ITMO Web Development Labs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -94,13 +94,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Personal Finance Service
+            ITMO Web Development Labs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Авторизация и JWT
+              База данных
             
           </span>
         </div>
@@ -178,13 +178,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Personal Finance Service" class="md-nav__button md-logo" aria-label="Personal Finance Service" data-md-component="logo">
+    <a href="../.." title="ITMO Web Development Labs" class="md-nav__button md-logo" aria-label="ITMO Web Development Labs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Personal Finance Service
+    ITMO Web Development Labs
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -196,7 +196,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -220,18 +220,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -241,7 +243,7 @@
   <span class="md-ellipsis">
     
   
-    Практики
+    Лабораторная работа №1
   
 
     
@@ -252,16 +254,44 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Практики
+    Лабораторная работа №1
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Введение
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -347,62 +377,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Проект
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Проект
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
               
                 
   
@@ -418,34 +392,6 @@
     
   
     Структура проекта
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../database/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    База данных и модели
   
 
     
@@ -482,7 +428,7 @@
   <span class="md-ellipsis">
     
   
-    Авторизация и JWT
+    База данных
   
 
     
@@ -500,7 +446,7 @@
   <span class="md-ellipsis">
     
   
-    Авторизация и JWT
+    База данных
   
 
     
@@ -526,21 +472,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Общая логика
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Регистрация пользователя
+        Подключение к базе данных
       
     </span>
   </a>
@@ -551,7 +486,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Хэширование паролей
+        Основные таблицы
       
     </span>
   </a>
@@ -562,18 +497,7 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Авторизация пользователя
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jwt-" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Создание JWT-токена
+        Пользователь
       
     </span>
   </a>
@@ -584,7 +508,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Получение текущего пользователя
+        Категория
       
     </span>
   </a>
@@ -595,7 +519,18 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Получение информации о себе
+        Транзакция
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#many-to-many" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Many-to-many связь транзакций и тегов
       
     </span>
   </a>
@@ -606,7 +541,18 @@
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Смена пароля
+        Бюджет
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Финансовая цель
       
     </span>
   </a>
@@ -617,6 +563,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../auth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Авторизация
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -664,7 +638,7 @@
   <span class="md-ellipsis">
     
   
-    Отчеты
+    Отчёты
   
 
     
@@ -692,7 +666,283 @@
   <span class="md-ellipsis">
     
   
-    Демонстрация работы
+    Демонстрация
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Лабораторная работа №2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lr2/task1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 задание
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lr2/task2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2 задание
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Лабораторная работа №3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lr3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Обзор
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lr3/docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker и Docker Compose
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lr3/parser_api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HTTP-интеграция парсера
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lr3/celery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Celery и Redis
   
 
     
@@ -740,21 +990,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Общая логика
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Регистрация пользователя
+        Подключение к базе данных
       
     </span>
   </a>
@@ -765,7 +1004,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Хэширование паролей
+        Основные таблицы
       
     </span>
   </a>
@@ -776,18 +1015,7 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Авторизация пользователя
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jwt-" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Создание JWT-токена
+        Пользователь
       
     </span>
   </a>
@@ -798,7 +1026,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Получение текущего пользователя
+        Категория
       
     </span>
   </a>
@@ -809,7 +1037,18 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Получение информации о себе
+        Транзакция
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#many-to-many" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Many-to-many связь транзакций и тегов
       
     </span>
   </a>
@@ -820,7 +1059,18 @@
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Смена пароля
+        Бюджет
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Финансовая цель
       
     </span>
   </a>
@@ -844,103 +1094,102 @@
 
 
 
-<h1 id="jwt">Авторизация и JWT</h1>
-<h2 id="_1">Общая логика</h2>
-<p>В проекте реализована регистрация, авторизация и аутентификация пользователя по JWT-токену.</p>
-<p>Для защиты API используется схема Bearer Token.</p>
-<hr />
-<h2 id="_2">Регистрация пользователя</h2>
-<p>Endpoint:</p>
-<pre><code class="language-text">POST /auth/register
-</code></pre>
-<p>Пример тела запроса:</p>
-<pre><code class="language-json">{
-  &quot;username&quot;: &quot;artem&quot;,
-  &quot;email&quot;: &quot;artem@mail.com&quot;,
-  &quot;password&quot;: &quot;123456&quot;
-}
-</code></pre>
-<p>При регистрации пароль не сохраняется в открытом виде.<br />
-Перед сохранением он хэшируется:</p>
-<pre><code class="language-python">password_hash=hash_password(user_data.password)
-</code></pre>
-<hr />
-<h2 id="_3">Хэширование паролей</h2>
-<p>Хэширование реализовано через <code>passlib</code>.</p>
-<pre><code class="language-python">pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+<h1 id="_1">База данных и модели</h1>
+<h2 id="_2">Подключение к базе данных</h2>
+<p>Подключение к PostgreSQL реализовано в файле <code>app/db/connection.py</code>.</p>
+<pre><code class="language-python">engine = create_engine(db_url, echo=True)
 
 
-def hash_password(password: str) -&gt; str:
-    return pwd_context.hash(password)
-
-
-def verify_password(plain_password: str, password_hash: str) -&gt; bool:
-    return pwd_context.verify(plain_password, password_hash)
+def get_session():
+    with Session(engine) as session:
+        yield session
+</code></pre>
+<p>Данные для подключения берутся из <code>.env</code>-файла:</p>
+<pre><code class="language-env">DB_USER=postgres
+DB_PASSWORD=your_password
+DB_HOST=localhost
+DB_NAME=personal_finance_db
+SECRET_KEY=your_secret_key
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=60
 </code></pre>
 <hr />
-<h2 id="_4">Авторизация пользователя</h2>
-<p>Endpoint:</p>
-<pre><code class="language-text">POST /auth/login
-</code></pre>
-<p>Для входа используется <code>OAuth2PasswordRequestForm</code>.</p>
-<p>Пользователь отправляет:</p>
-<pre><code class="language-text">username
-password
-</code></pre>
-<p>В случае успешной авторизации сервер возвращает JWT-токен:</p>
-<pre><code class="language-json">{
-  &quot;access_token&quot;: &quot;...&quot;,
-  &quot;token_type&quot;: &quot;bearer&quot;
-}
-</code></pre>
-<hr />
-<h2 id="jwt-">Создание JWT-токена</h2>
-<pre><code class="language-python">def create_access_token(subject: Any, expires_delta: Optional[timedelta] = None) -&gt; str:
-    expire = datetime.now(timezone.utc) + expires_delta
-    to_encode = {
-        &quot;sub&quot;: str(subject),
-        &quot;exp&quot;: expire,
-    }
-    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
-</code></pre>
-<p>В токен записывается:</p>
+<h2 id="_3">Основные таблицы</h2>
+<p>В проекте реализованы следующие таблицы:</p>
 <ul>
-<li><code>sub</code> — id пользователя;</li>
-<li><code>exp</code> — время истечения токена.</li>
+<li><code>user</code></li>
+<li><code>category</code></li>
+<li><code>tag</code></li>
+<li><code>transaction</code></li>
+<li><code>transactiontaglink</code></li>
+<li><code>budget</code></li>
+<li><code>financialgoal</code></li>
 </ul>
 <hr />
-<h2 id="_5">Получение текущего пользователя</h2>
-<pre><code class="language-python">def get_current_user(
-    token: str = Depends(oauth2_scheme),
-    session: Session = Depends(get_session),
-) -&gt; User:
+<h2 id="_4">Пользователь</h2>
+<pre><code class="language-python">class User(UserBase, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+    password_hash: str
+
+    transactions: List[&quot;Transaction&quot;] = Relationship(back_populates=&quot;user&quot;)
+    budgets: List[&quot;Budget&quot;] = Relationship(back_populates=&quot;user&quot;)
+    goals: List[&quot;FinancialGoal&quot;] = Relationship(back_populates=&quot;user&quot;)
 </code></pre>
-<p>Функция:</p>
-<ol>
-<li>получает JWT-токен;</li>
-<li>декодирует его;</li>
-<li>извлекает id пользователя;</li>
-<li>ищет пользователя в базе данных;</li>
-<li>возвращает текущего пользователя.</li>
-</ol>
+<p>Модель пользователя хранит логин, email и хэш пароля.<br />
+Также пользователь связан с транзакциями, бюджетами и финансовыми целями.</p>
 <hr />
-<h2 id="_6">Получение информации о себе</h2>
-<p>Endpoint:</p>
-<pre><code class="language-text">GET /auth/me
+<h2 id="_5">Категория</h2>
+<pre><code class="language-python">class Category(CategoryBase, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+
+    transactions: List[&quot;Transaction&quot;] = Relationship(back_populates=&quot;category&quot;)
+    budgets: List[&quot;Budget&quot;] = Relationship(back_populates=&quot;category&quot;)
 </code></pre>
-<p>Запрос доступен только авторизованному пользователю.</p>
+<p>Категория используется для группировки транзакций и бюджетов.</p>
 <hr />
-<h2 id="_7">Смена пароля</h2>
-<p>Endpoint:</p>
-<pre><code class="language-text">POST /auth/change-password
+<h2 id="_6">Транзакция</h2>
+<pre><code class="language-python">class Transaction(TransactionBase, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+
+    user: Optional[User] = Relationship(back_populates=&quot;transactions&quot;)
+    category: Optional[Category] = Relationship(back_populates=&quot;transactions&quot;)
+    tags: List[Tag] = Relationship(
+        back_populates=&quot;transactions&quot;,
+        link_model=TransactionTagLink
+    )
 </code></pre>
-<p>Пример тела запроса:</p>
-<pre><code class="language-json">{
-  &quot;old_password&quot;: &quot;123456&quot;,
-  &quot;new_password&quot;: &quot;654321&quot;
-}
+<p>Транзакция связана с пользователем, категорией и тегами.</p>
+<hr />
+<h2 id="many-to-many">Many-to-many связь транзакций и тегов</h2>
+<pre><code class="language-python">class TransactionTagLink(SQLModel, table=True):
+    transaction_id: Optional[int] = Field(default=None, foreign_key=&quot;transaction.id&quot;, primary_key=True)
+    tag_id: Optional[int] = Field(default=None, foreign_key=&quot;tag.id&quot;, primary_key=True)
+    note: Optional[str] = None
+    priority: Optional[int] = None
 </code></pre>
-<p>Перед сменой пароля проверяется старый пароль.</p>
+<p>Для связи many-to-many между транзакциями и тегами используется ассоциативная таблица <code>TransactionTagLink</code>.</p>
+<p>Дополнительно в ней хранятся поля:</p>
+<ul>
+<li><code>note</code>;</li>
+<li><code>priority</code>.</li>
+</ul>
+<hr />
+<h2 id="_7">Бюджет</h2>
+<pre><code class="language-python">class Budget(BudgetBase, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+
+    user: Optional[User] = Relationship(back_populates=&quot;budgets&quot;)
+    category: Optional[Category] = Relationship(back_populates=&quot;budgets&quot;)
+</code></pre>
+<p>Бюджет связан с пользователем и категорией.</p>
+<hr />
+<h2 id="_8">Финансовая цель</h2>
+<pre><code class="language-python">class FinancialGoal(FinancialGoalBase, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+
+    user: Optional[User] = Relationship(back_populates=&quot;goals&quot;)
+</code></pre>
+<p>Финансовая цель принадлежит конкретному пользователю.</p>
 
 
 
@@ -990,10 +1239,10 @@ password
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
